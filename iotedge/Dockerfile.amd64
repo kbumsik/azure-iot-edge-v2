@@ -1,8 +1,5 @@
 FROM balenalib/up-board-ubuntu:xenial
 
-# Env variables
-ARG DEVICE_CONNECTION_STRING
-
 # Install requirements
 RUN apt-get update --yes && apt-get install iptables ---yes
 
@@ -20,8 +17,6 @@ RUN sudo apt-get install -f --yes
 
 # Configure iotedge
 WORKDIR /etc/iotedge
-# connection string
-RUN sed -i '/device_connection_string/c\  device_connection_string : \"'${DEVICE_CONNECTION_STRING}'\"' ./config.yaml
 # listen
 RUN sed -i '/iotedge.mgmt.socket/c\  management_uri: \"unix:\/\/\/var\/lib\/iotedge\/mgmt.sock\"' ./config.yaml
 RUN sed -i '/iotedge.socket/c\  workload_uri: \"unix:\/\/\/var\/lib\/iotedge\/workload.sock\"' ./config.yaml

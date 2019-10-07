@@ -6,6 +6,9 @@ dockerd & 2>/dev/null
 #wait for docker to start.
 sleep 5s
 
+# Configure connection string
+sed -i '/device_connection_string/c\  device_connection_string : \"'${DEVICE_CONNECTION_STRING}'\"' /etc/iotedge/config.yaml
+
 # Configure docker socket
 sudo touch /var/lib/iotedge/mgmt.sock
 sudo touch /var/lib/iotedge/workload.sock

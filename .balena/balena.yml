@@ -1,3 +1,0 @@
-build-variables:
-    global:
-        - DEVICE_CONNECTION_STRING=<ADD DEVICE CONNECTION STRING HERE>
