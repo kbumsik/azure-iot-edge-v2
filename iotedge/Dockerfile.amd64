@@ -37,4 +37,5 @@ WORKDIR /usr/src/app
 COPY start.sh .
 RUN chmod +x start.sh
 
+# Run startup script
 CMD [ "./start.sh" ]
