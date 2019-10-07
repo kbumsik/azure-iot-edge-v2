@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# remove docker.pid if needed
+rm /var/run/docker.pid
+
 # Launch docker daemon in our service
 dockerd & 2>/dev/null
 
