@@ -9,6 +9,6 @@
 4. `balena push myFleet` the this repo to your balenaCloud fleet.
 
 # TODO:
-1. use `sed` to insert the connection string from an ENV var before the iotedge gets started, so we can have different configuration strings for different devices.
-2. Improve how waiting for dockerd works.
-3. Add a `Dockerfile.x86` for Intel based machines like Intel NUC or Upboard.
+- [x] use `sed` to insert the connection string from an ENV var before the iotedge gets started, so we can have different configuration strings for different devices.
+- [ ] Improve how waiting for dockerd works.
+- [x] Add a `Dockerfile.x86` for Intel based machines like Intel NUC or Upboard.
