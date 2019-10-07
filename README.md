@@ -5,7 +5,7 @@
 ### Requirements:
 1. Create iot hub on azure portal: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal
 2. Register a device: https://docs.microsoft.com/en-us/azure/iot-edge/how-to-register-device-portal
-3. Copy the primary connection string and add it to the `/iotedge/config.yaml` file in the provisioning section.
+3. Copy the primary connection string and add it to the `/.balena/balena.yml` file.
 4. `balena push myFleet` the this repo to your balenaCloud fleet.
 
 # TODO:
