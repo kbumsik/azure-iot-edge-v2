@@ -1,6 +1,6 @@
 ## Azure IOT Edge V2 on balenaOS
 
-**!!! This is still a Work In Progress !!!**
+**Work In Progress**
 
 ### Requirements:
 1. Create iot hub on azure portal: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal
