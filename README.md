@@ -11,4 +11,4 @@
 # TODO:
 - [x] use `sed` to insert the connection string from an ENV var before the iotedge gets started, so we can have different configuration strings for different devices.
 - [ ] Improve how waiting for dockerd works.
-- [x] Add a `Dockerfile.x86` for Intel based machines like Intel NUC or Upboard.
+- [x] Add a `Dockerfile.x86` for Intel based machines like Intel NUC or AAEON Upboard.
