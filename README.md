@@ -1,4 +1,4 @@
-## Azure IOT Edge V2 on balenaCloud
+## Azure IOT Edge V2 on balenaOS
 
 **!!! This is still a Work In Progress !!!**
 
