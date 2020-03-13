@@ -7,7 +7,7 @@ RUN apt-get update --yes && apt-get install iptables ---yes
 RUN curl -fSLs https://get.docker.com | sudo sh
 
 # Download and install the standard libiothsm implementation
-RUN curl -L https://github.com/Azure/azure-iotedge/releases/download/1.0.9-rc2/libiothsm-std_1.0.9.rc2-1_debian9_armhf.deb -o libiothsm-std.deb && sudo dpkg -i ./libiothsm-std.deb
+RUN curl -L https://github.com/Azure/azure-iotedge/releases/download/1.0.9-rc2/libiothsm-std_1.0.9.rc2-1-1_debian9_armhf.deb -o libiothsm-std.deb && sudo dpkg -i ./libiothsm-std.deb
 
 # Download and install the IoT Edge Security Daemon
 RUN curl -L https://github.com/Azure/azure-iotedge/releases/download/1.0.9-rc2/iotedge_1.0.9.rc2-1_debian9_armhf.deb -o iotedge.deb && sudo dpkg -i ./iotedge.deb
