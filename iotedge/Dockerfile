@@ -1,4 +1,4 @@
-FROM balenalib/up-board-ubuntu:xenial
+FROM balenalib/raspberrypi3-debian:stretch
 
 # Install requirements
 RUN apt-get update --yes && apt-get install iptables ---yes
