@@ -23,7 +23,7 @@ sudo chmod 660 /var/lib/iotedge/mgmt.sock
 sudo chmod 666 /var/lib/iotedge/workload.sock
 
 #Launch iotedge
-/usr/bin/iotedged -c config.yaml
+/usr/bin/iotedged -c /etc/iotedge/config.yaml
 
 while :
 do
